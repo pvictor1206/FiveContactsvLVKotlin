@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fivecontactsvlvkotlin">
 
+    <uses-permission android:name="android.permission.INTERNETT" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FiveContactsvLVKotlin">
         <activity
-            android:name=".MainActivity"
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

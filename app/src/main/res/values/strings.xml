@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FiveContactsvLVKotlin</string>
+    <string name="not_acoount">Not have acoount? <b>SignUp</b></string>
 </resources>
