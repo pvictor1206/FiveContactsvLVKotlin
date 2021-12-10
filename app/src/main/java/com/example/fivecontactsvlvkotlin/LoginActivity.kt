@@ -50,6 +50,10 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this,SignUPActivity::class.java))
         }
 
+        binding.noForgotTv.setOnClickListener {
+            startActivity(Intent(this,ForgotPasswordActivity::class.java))
+        }
+
 
         binding.loginBtn.setOnClickListener {
             validateData()
