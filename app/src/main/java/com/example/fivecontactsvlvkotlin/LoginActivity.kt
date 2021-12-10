@@ -58,6 +58,8 @@ class LoginActivity : AppCompatActivity() {
         binding.loginBtn.setOnClickListener {
             validateData()
         }
+
+
     }
 
     private fun validateData() {

@@ -6,10 +6,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import com.example.fivecontactsvlvkotlin.databinding.ActivitySignUpactivityBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+
+
+
 
 class SignUPActivity : AppCompatActivity() {
 
@@ -24,6 +29,7 @@ class SignUPActivity : AppCompatActivity() {
 
     private var email = ""
     private var password = ""
+    private var logado = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,13 +51,30 @@ class SignUPActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
 
+
+        binding.checkBoxLogar.setOnClickListener(View.OnClickListener {
+            if (binding.checkBoxLogar.isChecked) {
+                //CLICADO
+                logado = true
+            } else {
+                //NAO CLICADO
+                logado = false
+            }
+        })
+
+
+
+
         binding.singUpBtn.setOnClickListener {
             validateData()
         }
 
 
 
+
+
     }
+
 
     private fun validateData() {
         email = binding.emailEt.text.toString().trim()
