@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "765433322322",
+    "project_id": "fivecontacts-ecefa",
+    "storage_bucket": "fivecontacts-ecefa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765433322322:android:b9532cae11e5d5a0b9388b",
+        "android_client_info": {
+          "package_name": "com.example.fivecontactsvlvkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765433322322-oohtsmrehtisn44n6bjhg44o5h814skt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQd-q2dC_BfC8D8iYoxEuOyMRbZlavorc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "765433322322-oohtsmrehtisn44n6bjhg44o5h814skt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
