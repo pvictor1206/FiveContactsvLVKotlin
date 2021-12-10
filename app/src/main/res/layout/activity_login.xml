@@ -27,6 +27,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailTil"
         android:layout_above="@+id/passwordTil"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,9 +70,9 @@
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
         android:layout_below="@+id/passwordTil"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:text="Login" />
 
     <TextView
         android:id="@+id/noAccountTv"
@@ -81,6 +82,18 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:padding="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="217dp"
+        android:layout_height="306dp"
+        android:layout_above="@+id/emailTil"
+        android:layout_alignStart="@+id/emailTil"
+        android:layout_alignEnd="@+id/emailTil"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="-67dp"
+        app:srcCompat="@drawable/whatsapp_image_2021_12_09_at_14_19_16_removebg_preview" />
 
 
 </RelativeLayout>
